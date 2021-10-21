@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Form Pemesanan Pizza</title>
+ <meta charset="UTF-8">
+ </head>
+ <body bgcolor="beige" text="black">
+     <h2>WaynePizza | Formulir Pemesanan</h2>
+     <p>Kami sekarang mempunyai fitur baru yaitu pemesanan pizza dapat melewati web! Anda bisa memesan "WaynePizza" dari rumah kapan saja dan dimana saja. </p>
+     <fieldset>
+         <legend><b>Informasi anda</b></legend>
+        <ol>
+            <li><label>Nama: <input type="text" name="nama"></label></li>
+            <li><label>Alamat: <input type="text" name="alamat"></label></li>
+            <li><label>Nomor Telfon: <input type="text" name="nomortelfon"></label></li> 
+            <li><label>Email: <input type="text" name="email"></label></li>
+            Catatan Pemesanan:<br/><textarea name="catatanpemesanan" cols="40" rows="3"></textarea></li>
+        </ol>
+     </fieldset>
+     <h3>Pesan Pizza Pilihan Anda</h3>
+     <h4>Pilahan Roti:</h4>
+     <form>  
+         <input type="radio" name="bahan roti" value="original">WaynePizza original<br>
+         <input type="radio" name="bahan roti" value="banyak biji-bijian">WaynePizza Small</Small><br>
+         <input type="radio" name="bahan roti" value="isi keju">WaynePizza Medium<br>
+         <input type="radio" name="bahan roti" value="tanpa gula">WaynePizza Large <br>
+     </form>
+     <h4>Toppings:</h4>
+     <form>
+         <input type="checkbox" id="toppings1" name="toppings1" value="red sauce">
+         <label for="toppings1">Red sauce</label><br>
+         <input type="checkbox" id="toppings2" name="toppings2" value="white sauce">
+         <label for="toppings2">White sauce</label><br>
+         <input type="checkbox" id="toppings3" name="toppings3" value="keju mozarella">
+         <label for="toppings3">Keju mozarella</label><br>
+         <input type="checkbox" id="toppings4" name="toppings4" value="pepperoni">
+         <label for="toppings4">Pepperoni</label><br>
+         <input type="checkbox" id="toppings5" name="toppings5" value="mushrooms">
+         <label for="toppings5">Mushrooms</label><br>
+         <input type="checkbox" id="toppings6" name="toppings6" value="paprika">
+         <label for="toppings6">Paprika</label><br>
+         <input type="checkbox" id="toppings7" name="toppings7" value="spesial">
+         <label for="toppings7">Special WaynePizza</label><br>
+
+     </form>
+     <br/>
+     <label><b>Banyaknya Pizza:</b> <input type="number" name="pizza" min="1" max="6"></label>
+     <br/>
+     <p><input type="submit" value="Pesan"> <input type="reset"></p>
+</body>
+</html>
